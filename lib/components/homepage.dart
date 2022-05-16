@@ -25,12 +25,6 @@ class _HomePageState extends State<HomePage> {
     final numberOfPeople = int.tryParse(_numberOfPeopleController.text) ?? -1;
     final valueAccountDrink = double.tryParse(_valueAccountDrinksController.text) ?? -1.0;
     final numberOfPeopleDrink = int.tryParse(_numberOfPeopleDrinkController.text) ?? -1;
-
-    /*debugPrint('$valueAccountWithoutDrink');
-    debugPrint('$numberOfPeople');
-    debugPrint('$valueAccountDrink ');
-    debugPrint('$numberOfPeopleDrink');
-    debugPrint('$_valueTip');*/
     
     if(valueAccountWithoutDrink > 0 && numberOfPeople <= 0){
       //error missing number of people that ate
@@ -112,8 +106,6 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
-        //Text("Pessoas que beberam: R\$10,00"),
-        //content: Text("Pessoas que nao beberam: R\$10,00"),
         actions: [
           FlatButton(
             child: Text(
